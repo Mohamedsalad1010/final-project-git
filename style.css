@@ -912,3 +912,104 @@ a {
     font-size: 12px;
 }
 
+/* =========================================
+   CTA
+========================================= */
+
+.cta-section {
+    padding: 45px 0 90px;
+}
+
+.cta {
+    position: relative;
+
+    min-height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 45px 50px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #03281a,
+            #07512f
+        );
+}
+
+.cta::after {
+    content: "";
+
+    position: absolute;
+
+    right: -100px;
+    top: -180px;
+
+    width: 550px;
+    height: 550px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(83, 150, 83, 0.18),
+            transparent 65%
+        );
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow.light {
+    color: #d6ead9;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.eyebrow.light span {
+    background: #9bcf50;
+}
+
+.cta h2 {
+    max-width: 500px;
+
+    margin-top: 15px;
+
+    color: white;
+
+    font-size: clamp(30px, 4vw, 46px);
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+.cta h2 span {
+    color: #82c72b;
+}
+
+.cta p {
+    margin-top: 12px;
+
+    color: #b6c8bd;
+
+    font-size: 13px;
+}
+
+.cta > .btn {
+    position: relative;
+    z-index: 3;
+}
+
+
