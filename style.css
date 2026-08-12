@@ -1131,3 +1131,328 @@ a {
 
     font-size: 10px;
 }
+
+
+/* =========================================
+   RESPONSIVE — TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .hero-text .eyebrow {
+        margin-inline: auto;
+    }
+
+    .hero h1,
+    .hero-text > p {
+        margin-inline: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        height: 390px;
+    }
+
+    .hero-benefits {
+        margin-top: 0;
+        margin-inline: auto;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        margin-inline: auto;
+        margin-top: 40px;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+
+    .steps::before {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(100% - 30px, var(--container));
+    }
+
+    .header {
+        position: absolute;
+    }
+
+    .nav {
+        min-height: 72px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-button {
+        min-height: 42px;
+        padding-inline: 16px;
+
+        font-size: 12px;
+    }
+
+    .logo-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .logo-text strong {
+        font-size: 16px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+
+        padding-top: 115px;
+        padding-bottom: 40px;
+    }
+
+    .hero h1 {
+        font-size: clamp(43px, 13vw, 60px);
+
+        letter-spacing: -3px;
+    }
+
+    .hero-text > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-image {
+        height: 300px;
+
+        margin-top: 20px;
+    }
+
+    .house-card {
+        width: 330px;
+        height: 205px;
+
+        margin-top: 50px;
+    }
+
+    .house-roof {
+        top: 15px;
+        left: 12px;
+
+        width: 306px;
+        height: 120px;
+    }
+
+    .house-body {
+        left: 40px;
+        right: 40px;
+
+        height: 125px;
+    }
+
+    .window {
+        width: 50px;
+        height: 40px;
+
+        top: 35px;
+
+        border-width: 4px;
+    }
+
+    .window-one {
+        left: 25px;
+    }
+
+    .window-two {
+        right: 25px;
+    }
+
+    .door {
+        width: 43px;
+        height: 90px;
+    }
+
+    .hero-sun {
+        top: 10px;
+        right: 15px;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 22px;
+    }
+
+
+    /* Hero benefits */
+
+    .hero-benefits {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+    }
+
+    .hero-benefit {
+        padding: 17px 20px;
+    }
+
+    .hero-benefit + .hero-benefit {
+        border-left: none;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* Steps */
+
+    .steps {
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
+    }
+
+
+    /* CTA */
+
+    .cta-section {
+        padding: 25px 0 70px;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 35px 28px;
+    }
+
+    .cta > .btn {
+        width: 100%;
+    }
+
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+
+        padding-top: 50px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .nav-button {
+        padding-inline: 12px;
+    }
+
+    .nav-button span {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-image {
+        height: 270px;
+    }
+
+    .house-card {
+        width: 285px;
+        height: 180px;
+    }
+
+    .house-roof {
+        width: 263px;
+        height: 105px;
+    }
+
+    .house-body {
+        left: 34px;
+        right: 34px;
+        height: 110px;
+    }
+
+    .benefit-card {
+        padding: 30px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
