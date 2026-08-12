@@ -1,0 +1,35 @@
+name: Qorrax Project Check
+
+on:
+  push:
+    branches:
+      - main
+      - "**"
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate Project Files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          echo "Checking Qorrax project files..."
+
+          test -f index.html
+          test -f style.css
+          test -f readme.md
+          test -f .gitignore
+
+          echo "✓ index.html exists"
+          echo "✓ style.css exists"
+          echo "✓ README.md exists"
+          echo "✓ .gitignore exists"
+          echo "✓ Qorrax project check passed!"
